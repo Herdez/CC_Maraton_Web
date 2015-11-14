@@ -1,0 +1,13 @@
+
+<h1>DECKS</h1>
+
+<h3>Elige un tema</h3>
+
+
+<ul>
+<%@decks.each do |deck| %>
+	<li>
+		<a href="/show_deck/#{deck.id}">DECK <%=deck.name%></a>
+	</li>
+<% end %>
+</ul>
