@@ -12,5 +12,5 @@ end
 
 post '/show_deck/:show_deckid/card/:cardid/answers' do
 	#selecciona la respuesta 
-	erb :
+	
 end

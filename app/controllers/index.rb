@@ -15,6 +15,6 @@ end
 
 
 get '/secret' do
-	
+	@decks = Deck.all
   erb :secret
 end

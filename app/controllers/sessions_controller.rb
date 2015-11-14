@@ -21,7 +21,8 @@ post '/signin' do
 
 	if @user
   	session[:user_id] = @user.id
-  	erb :secret
+
+  	redirect ("/secret")
   else
   	@errors = "Invalid Email and Password"
   	erb :signin

@@ -1,7 +1,3 @@
-
-
-
-
 user = User.create(name:"Javier", email:"javier@codea.mx", password:"2134")
 
 
@@ -37,4 +33,18 @@ end
 
 
 
+# require 'csv'
+
+# def load_file(file)
+# 	puts file
+# 	array = []
+# 	file_text = File.read(file)
+# 	csv = CSV.parse(file_text, :headers => true, :header_converters => :symbol)
+# 	csv.each {|row| array << row.to_hash}
+# 	array
+# end
+
+# filename = File.dirname(__FILE__) + "/card.csv"
+
+# load_file(filename).each { |line| Card.create(line)}
 
